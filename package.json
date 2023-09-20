@@ -1,4 +1,4 @@
-{
+{ "homepage": "http://ssenkaayi.github.io/sekai",
   "name": "chalz",
   "version": "0.1.0",
   "private": true,
@@ -8,10 +8,13 @@
     "react-scripts": "0.9.5"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "react-router-dom": "^6.16.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
